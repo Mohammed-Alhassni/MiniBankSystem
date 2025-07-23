@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("testing savingsAccount");
+        savingsAccount test= new savingsAccount("test", "112", 1000, 0.2);
+        test.applyInterest();
+        test.showAccountInfo();
+
         ArrayList<bankAccount> userAccounts=new ArrayList<bankAccount>();
         boolean isContinue=true;
         while(isContinue){
