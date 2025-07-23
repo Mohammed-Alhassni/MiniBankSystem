@@ -9,4 +9,12 @@ public class savingsAccount extends bankAccount {
     public void applyInterest(){
         balance= balance * (1+interestRate);
     }
+
+    @Override
+    public void showAccountInfo(){
+        System.out.println("\nAccount Name: " + accountName);
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: " + balance+ "\n");
+        System.out.println("Interest Rate: " + interestRate);
+    }
 }
