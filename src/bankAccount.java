@@ -15,18 +15,18 @@ public class bankAccount {
     public void showAccountInfo(){
         System.out.println("\nAccount Name: " + accountName);
         System.out.println("Account Number: " + accountNumber);
-        System.out.println("Balance: " + balance);
+        System.out.println("Balance: " + balance+ "\n");
     }
 
-    public double deposit(double amount){
+    public void deposit(double amount){
         balance= balance+ amount;
         System.out.println("Deposited "+amount);
-        return balance;
+        System.out.println("New Balance"+balance);
     }
 
-    public double withdraw(double amount){
+    public void withdraw(double amount){
         balance= balance- amount;
         System.out.println("Withdrawl "+amount);
-        return balance;
+        System.out.println("New Balance"+balance);
     }
 }
